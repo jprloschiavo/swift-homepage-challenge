@@ -11,108 +11,159 @@
         <header class="flexbox-row">
             <img id="swift-logo" src="./resources/images/swift-logo.svg">
             <nav class="primary flexbox-row">
-                <a href="#value-prop">Why Choose Swift</a>
-                <a href="#how-it-works">How It Works</a>
+                <a href="#value-prop">Why Choose Us</a>
                 <a href="#service-area">Service Area</a>
                 <a href="#plans-pricing">Plans & Pricing</a>
+                <a href="#">About</a>
                 <div class="contact-button">
-                    <a href="#">Contact</a>
+                    <a href="#setup">Setup Swift</a>
                 </div>
             </nav>
         </header>
         <main>
             <section id="hero" class="flexbox-row">
                 <div>
-                    <h1>Your City. Your Ride. Your Way.</h1>
-                    <h3>Find a Swift bike or scooter near you and start riding in seconds. Fast, affordable, and eco-friendly transportation at your fingertips.</h3>
+                    <h1>Your Ride. Your Way.</h1>
+                    <h3>Find a Swift bike or e-scooter near you and start riding in seconds. Fast, affordable, and eco-friendly transportation at your fingertips.</h3>
                     <div class="cta-button">
                         <a href="#">Download the App</a>
                     </div>
                 </div>
-                <div>
-                    <div class="review">
+            </section>
+            <section id="customer-reviews" class="flexbox-row">
+                <div class="review flexbox-row">
+                    <img class="customer-headshot" src="./resources/images/alex-j.jpg">
+                    <div>
                         <p class="quote">"Swift gets me to work faster and cheaper than the subway. I love it!"</p>
                         <p class="name"><em>- Alex J.</em></p>
                     </div>
-                    <div class="review">
+                </div>
+                <div class="review flexbox-row">
+                    <img class="customer-headshot" src="./resources/images/maria-g.jpg">
+                    <div>
                         <p class="quote">"Eco-friendly, easy to use, and always reliable. I never go anywhere without Swift."</p>
-                        <p  class="name"><em>- Maria G.</em></p>
+                        <p class="name"><em>- Maria G.</em></p>
                     </div>
-                    <div class="review">
+                </div>
+                <div class="review flexbox-row">
+                    <img class="customer-headshot" src="./resources/images/jordan-p.jpg">
+                    <div>
                         <p class="quote">"Swift makes getting around the city so easy. I never have to worry about traffic or parking anymore. Just unlock and go!"</p>
-                        <p  class="name"><em>- Jordan P.</em></p>
+                        <p class="name"><em>- Jordan P.</em></p>
                     </div>
                 </div>
             </section>
             <section id="value-prop" class="flexbox-column">
-                <h2>Why Swift is Your Best Choice</h2>
-                <div class="flexbox-row">
-                    <div>
+                <h2>Why Choose Us</h2>
+                <div class="grid">
+                    <div class="value-container grid-item">
+                        <img class="value-icon" src="">
                         <h4>Affordable & Flexible</h4>
                         <p>Save with a monthly plan, or pay each ride with one tap.</p>
                     </div>
-                    <div>
+                    <div class="value-container grid-item">
+                        <img class="value-icon" src="">
                         <h4>Eco-Friendly</h4>
-                        <p>Swift bikes and scooters have zero emissions, powered by clean energy.</p>
+                        <p>Swift bikes and e-scooters have zero emissions, powered by clean energy.</p>
                     </div>
-                    <div>
-                        <h4>Ease of Use</h4>
+                    <div class="value-container grid-item">
+                        <img class="value-icon" src="">
+                        <h4>Easy to Use</h4>
                         <p>Unlock and ride within minutes with our mobile app.</p>
                     </div>
-                    <div>
+                    <div class="value-container grid-item">
+                        <img class="value-icon" src="">
                         <h4>Always There for You</h4>
-                        <p>Thousands of Swift bikes and scooters across your city.</p>
+                        <p>Thousands of Swift bikes and e-scooters across your city.</p>
                     </div>
                 </div>
             </section>
-            <section id="how-it-works">
-                <p>How It Works</p>
-                <ol>
-                    <li>
-                        <p>Download the App</p>
-                        <p>Sign up and create your account in minutes.</p>
-                    </li>
-                    <li>
-                        <p>Find & Unlock</p>
-                        <p>Let our app locate the nearest Swift bike or scooter, and unlock with one tap.</p>
-                    </li>
-                    <li>
-                        <p>Ride & Park</p>
-                        <p>Get where you're going fast and park responsibly. End your ride on the app and you're done!</p>
-                    </li>
-                </ol>
+            <section id="setup" class="flexbox-column">
+                <div class="flexbox-row">
+                    <div id="setup-steps">
+                        <div class="setup-step">
+                            <h4>Sign Up Now</h4>
+                            <p>Create your account now for free.</p>
+                        </div>
+                        <div class="setup-step">
+                            <h4>Get the App</h4>
+                            <p>Download the Swift app onto your mobile phone from the app store.</p>
+                        </div>
+                        <div class="setup-step">
+                            <h4>Locate</h4>
+                            <p>Our app will find the nearest Swift bike or e-scooter for you automatically.</p>
+                        </div>
+                        <div class="setup-step">
+                            <h4>Unlock & Go</h4>
+                            <p>Get where you need to go fast and park responsibly. End your ride on the app and you're done!</p>
+                        </div>
+                    </div>
+                    <div class="form-container">
+                        <h2>Sign Up</h2>
+                        <form>
+                            <div class="form-field">
+                                <label for="fname">Name</label>
+                                <input type="text" placeholder="Your Full Name" name="fname">
+                            </div>
+                            <div class="form-field">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Your Email" name="email">
+                            </div>
+                            <div class="form-field">
+                                <label for="pass">Password</label>
+                                <input type="password" placeholder="Password" name="pass">
+                            </div>
+                            <div class="form-field">
+                                <input type="checkbox" name="terms-checkbox" class="terms-checkbox">
+                                <label for="agree-to-terms">I agree to all statements in <a href="#">Terms of Service</a></label>
+                            </div>
+                            <div class="form-field form-button">
+                                <input type="submit" value="Create Account">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </section>
-            <section id="service-area">
-                <p>Explore the City</p>
-                <p>Check out our service map to see where we're available. Whether it's your commute, errands, or a night out on the town, Swift is waiting for you.</p>
-            </section>
-            <section id="plans-pricing">
-                <p>Plans & Pricing</p>
+            <section id="service-area" class="flexbox-row">
+                <map>
+                    <!-- Map placeholder -->
+                    <img src="">
+                </map>
                 <div>
-                    <div>
-                        <p>Pay-As-You-Go:</p>
+                    <h2>Explore Your City</h2>
+                    <p>Check out our service map to see where we're available. Whether it's your commute, errands, or a night out on the town, Swift is waiting for you.</p>
+                </div>
+            </section>
+            <section id="plans-pricing" class="flexbox-column">
+                <h2>Plans & Pricing</h2>
+                <div class="grid">
+                    <div class="price-plan grid-item">
+                        <h4>Pay-As-You-Go:</h4>
                         <p>Just $0.25 per minute.</p>
                     </div>
-                    <div>
-                        <p>Day Pass:</p>
+                    <div class="price-plan grid-item">
+                        <h4>Day Pass:</h4>
                         <p>Unlimited rides for 24 hours for just $9.99.</p>
                     </div>
-                    <div>
-                        <p>Monthly Pass:</p>
+                    <div class="price-plan grid-item">
+                        <h4>Monthly Pass:</h4>
                         <p>Unlimited rides for $29.99 per month.</p>
                     </div>
                 </div>
             </section>
             <section id="cta-banner">
-                <p>Ready to Ride?</p>
-                <p>Download Swift and explore your city, your way.</p>
+                <h2>Ready to Ride?</h2>
+                <h4>Download Swift and explore your city, your way.</h4>
+                <div class="cta-button">
+                    <a href="#">Download the App</a>
+                </div>
             </section>
         </main>
         <footer>
             <nav class="secondary">
                 <ul>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#">Blog</a>
                     </li>
                     <li>
                         <a href="#">Careers</a>
@@ -124,7 +175,7 @@
                         <a href="#">Support</a>
                     </li>
                     <li>
-                        <a href="#">Blog</a>
+                        <a href="#">Terms & Service</a>
                     </li>
                 </ul>
             </nav>

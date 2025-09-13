@@ -5,11 +5,14 @@
 }
 
 :root {
+    /* Colors */
     --primary-color: #2ECC71;
     --secondary-color: #3498DB;
     --accent-color: #F1C40F;
     --light-color: #F9FAFB;
     --dark-color: #1C1C1C;
+    --low-bg: #f8f8f8;
+    --high-bg: #fff;
 }
 
 html {
@@ -21,7 +24,7 @@ html {
 body {
     width: 100%;
     /*margin-top: 4rem;*/
-    background-color: var(--light-color);
+    background-color: var(--low-bg);
 }
 
 header, main, footer {
@@ -30,12 +33,11 @@ header, main, footer {
 
 header {
     justify-content: space-between;
-    position: fixed;
-    background-color: var(--light-color);
-    /*box-shadow: var(--dark-color) 0 1px 4px;
+    background-color: var(--high-bg);
+    /*position: fixed;
     padding: 1rem;
-    height: 4rem;*/
-    top: 0;
+    height: 4rem;
+    top: 0;*/
 }
 
 main, footer {
@@ -61,6 +63,7 @@ h3 {
 
 h4 {
     font-size: 1.125rem;
+    line-height: 1.5;
 }
 
 p {
@@ -77,12 +80,30 @@ p {
     align-items: center;
 }
 
+.grid {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    column-gap: 0.5rem;
+    justify-content: center;
+}
+
+.grid-item {
+    background-color: var(--high-bg);
+    border-radius: 0.5rem;
+    text-align: center;
+    margin: 0 0 2.5rem;
+    padding: 2.5rem 1.5rem;
+    max-width: 256px;
+}
+
 nav.primary {
     align-items: center;
 }
 
 nav.primary > a, nav.primary .contact-button {
-    margin: 0 0.5rem;
+    /*margin: 0 0.5rem;*/
 }
 
 .contact-button {
@@ -90,10 +111,11 @@ nav.primary > a, nav.primary .contact-button {
 }
 
 .cta-button {
+    font-weight: 700;
     background-color: var(--accent-color);
     border-radius: 0.5rem;
     width: fit-content;
-    /*padding: 0.75rem;*/
+    padding: 1rem;
 }
 
 .cta-button a {
@@ -103,12 +125,44 @@ nav.primary > a, nav.primary .contact-button {
     color: var(--dark-color);
 }
 
-.quote {
-    text-align: center;
+.review {
+    align-items: center;
+    background-color: var(--high-bg);
+    border-radius: 1.5rem;
+    padding: 1.5rem 1rem;
 }
 
-.name {
+.review .customer-headshot {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.review .quote {
+    text-align: center;
+    max-width: 256px;
+    margin-bottom: 0.5rem;
+}
+
+.review .name {
     text-align: right;
+}
+
+.value-container {
+
+}
+
+.setup-step {
+    background-color: var(--high-bg);
+}
+
+.form-container {
+    background-color: var(--high-bg);
+}
+
+.price-plan {
+    
 }
 
 nav.secondary li {
@@ -125,5 +179,23 @@ nav.secondary li+li::before {
 }
 
 #hero {
+    background-color: var(--high-bg);
     /*padding-top: 1rem;*/
+}
+
+#customer-reviews {
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 4rem 0 4rem;
+    padding: 0 1.5rem;
+}
+
+#value-prop {
+    background-color: var(--secondary-color);
+    padding: 0 1.5rem;
+}
+
+#value-prop h2 {
+    color: var(--light-color);
+    margin: 2rem 0 1.5rem ;
 }
