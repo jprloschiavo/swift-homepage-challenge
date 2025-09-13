@@ -13,13 +13,14 @@
 }
 
 html {
+    font-family: "Montserrat";
     font-size: 16px;
     width: 100%;
 }
 
 body {
     width: 100%;
-    margin-top: 4rem;
+    /*margin-top: 4rem;*/
     background-color: var(--light-color);
 }
 
@@ -28,31 +29,55 @@ header, main, footer {
 }
 
 header {
-    padding: 1rem;
+    justify-content: space-between;
     position: fixed;
-    height: 4rem;
+    background-color: var(--light-color);
+    /*box-shadow: var(--dark-color) 0 1px 4px;
+    padding: 1rem;
+    height: 4rem;*/
     top: 0;
 }
 
 main, footer {
-    padding: 0rem 1rem;
+    /*padding: 0 1rem;*/
 }
 
-section {
-    margin: 2rem 0;
+/*section {
+    margin-bottom: 2rem;
+}*/
+
+h1 {
+    font-size: 3rem;
 }
 
-.flex-row {
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.flexbox-row {
     display: flex;
-    flex-direction: row;
 }
 
-.space-between {
-    justify-content: space-between;
+.flexbox-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav.primary {
-    display: flex;
     align-items: center;
 }
 
@@ -64,12 +89,26 @@ nav.primary > a, nav.primary .contact-button {
     display: inline;
 }
 
-.quote {
+.cta-button {
+    background-color: var(--accent-color);
+    border-radius: 0.5rem;
+    width: fit-content;
+    /*padding: 0.75rem;*/
+}
 
+.cta-button a {
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.quote {
+    text-align: center;
 }
 
 .name {
-
+    text-align: right;
 }
 
 nav.secondary li {
@@ -81,6 +120,10 @@ nav.secondary li+li::before {
 }
 
 #swift-logo {
-    width: auto;
-    height: 2rem;
+    /*width: auto;
+    height: 2rem;*/
+}
+
+#hero {
+    /*padding-top: 1rem;*/
 }

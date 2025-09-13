@@ -3,29 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./resources/css/style.css">
+        <link href="./resources/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <title>Your Way With Swift</title>
     </head>
     <body>
-        <header>
-            <div class="flex-row space-between">
-                <img id="swift-logo" src="./resources/images/swift-logo.svg">
-                <nav class="primary">
-                    <a href="#value-prop">Why Choose Swift</a>
-                    <a href="#how-it-works">How It Works</a>
-                    <a href="#service-area">Service Area</a>
-                    <a href="#plans-pricing">Plans & Pricing</a>
-                    <div class="contact-button">
-                        <a href="#">Contact</a>
-                    </div>
-                </nav>
-            </div>
+        <header class="flexbox-row">
+            <img id="swift-logo" src="./resources/images/swift-logo.svg">
+            <nav class="primary flexbox-row">
+                <a href="#value-prop">Why Choose Swift</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#service-area">Service Area</a>
+                <a href="#plans-pricing">Plans & Pricing</a>
+                <div class="contact-button">
+                    <a href="#">Contact</a>
+                </div>
+            </nav>
         </header>
         <main>
-            <section id="hero" class="flex-row">
+            <section id="hero" class="flexbox-row">
                 <div>
-                    <p>Your City. Your Ride. Your Way.</p>
-                    <p>Find a Swift bike or scooter near you and start riding in seconds. Fast, affordable, and eco-friendly transportation at your fingertips.</p>
+                    <h1>Your City. Your Ride. Your Way.</h1>
+                    <h3>Find a Swift bike or scooter near you and start riding in seconds. Fast, affordable, and eco-friendly transportation at your fingertips.</h3>
                     <div class="cta-button">
                         <a href="#">Download the App</a>
                     </div>
@@ -45,26 +44,26 @@
                     </div>
                 </div>
             </section>
-            <section id="value-prop">
-                <p>Why Swift is Your Best Choice</p>
-                <ul>
-                    <li>
-                        <p>Affordable & Flexible</p>
+            <section id="value-prop" class="flexbox-column">
+                <h2>Why Swift is Your Best Choice</h2>
+                <div class="flexbox-row">
+                    <div>
+                        <h4>Affordable & Flexible</h4>
                         <p>Save with a monthly plan, or pay each ride with one tap.</p>
-                    </li>
-                    <li>
-                        <p>Eco-Friendly</p>
+                    </div>
+                    <div>
+                        <h4>Eco-Friendly</h4>
                         <p>Swift bikes and scooters have zero emissions, powered by clean energy.</p>
-                    </li>
-                    <li>
-                        <p>Ease of Use</p>
+                    </div>
+                    <div>
+                        <h4>Ease of Use</h4>
                         <p>Unlock and ride within minutes with our mobile app.</p>
-                    </li>
-                    <li>
-                        <p>Always There for You</p>
+                    </div>
+                    <div>
+                        <h4>Always There for You</h4>
                         <p>Thousands of Swift bikes and scooters across your city.</p>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </section>
             <section id="how-it-works">
                 <p>How It Works</p>
@@ -89,7 +88,7 @@
             </section>
             <section id="plans-pricing">
                 <p>Plans & Pricing</p>
-                <div class="flex-row">
+                <div>
                     <div>
                         <p>Pay-As-You-Go:</p>
                         <p>Just $0.25 per minute.</p>
