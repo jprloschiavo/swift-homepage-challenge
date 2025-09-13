@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #2ECC71;
+    --secondary-color: #3498DB;
+    --accent-color: #F1C40F;
+    --light-color: #F9FAFB;
+    --dark-color: #1C1C1C;
+}
+
+html {
+    font-size: 16px;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    margin-top: 4rem;
+    background-color: var(--light-color);
+}
+
+header, main, footer {
+    width: 100%;
+}
+
+header {
+    padding: 1rem;
+    position: fixed;
+    height: 4rem;
+    top: 0;
+}
+
+main, footer {
+    padding: 0rem 1rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+nav.primary {
+    display: flex;
+    align-items: center;
+}
+
+nav.primary > a, nav.primary .contact-button {
+    margin: 0 0.5rem;
+}
+
+.contact-button {
+    display: inline;
+}
+
+.quote {
+
+}
+
+.name {
+
+}
+
+nav.secondary li {
+    display: inline;
+}
+
+nav.secondary li+li::before {
+    content: "/";
+}
+
+#swift-logo {
+    width: auto;
+    height: 2rem;
+}
