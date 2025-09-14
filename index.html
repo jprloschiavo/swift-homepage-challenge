@@ -12,18 +12,16 @@
             <img id="swift-logo" src="./resources/images/swift-logo.svg">
             <nav class="primary flexbox-row">
                 <a href="#value-prop">Why Choose Us</a>
-                <a href="#service-area">Service Area</a>
                 <a href="#plans-pricing">Plans & Pricing</a>
-                <a href="#">About</a>
                 <div class="contact-button">
                     <a href="#setup">Setup Swift</a>
                 </div>
             </nav>
         </header>
         <main>
-            <section id="hero" class="flexbox-row">
-                <div>
-                    <h1>Your Ride. Your Way.</h1>
+            <section id="hero">
+                <div class="hero-container flexbox-column">
+                    <h1>Your Ride. <strong>Your Way.</strong></h1>
                     <h3>Find a Swift bike or e-scooter near you and start riding in seconds. Fast, affordable, and eco-friendly transportation at your fingertips.</h3>
                     <div class="cta-button">
                         <a href="#">Download the App</a>
@@ -79,49 +77,67 @@
                 </div>
             </section>
             <section id="setup" class="flexbox-column">
-                <div class="flexbox-row">
-                    <div id="setup-steps">
-                        <div class="setup-step">
+                <div>
+                    <div class="setup-step flexbox-row">
+                        <div class="step-number">
+                            <h1><strong>1</strong></h1>
+                        </div>
+                        <div>
                             <h4>Sign Up Now</h4>
                             <p>Create your account now for free.</p>
                         </div>
-                        <div class="setup-step">
+                    </div>
+                    <div class="setup-step flexbox-row">
+                        <div class="step-number">
+                            <h1><strong>2</strong></h1>
+                        </div>
+                        <div>
                             <h4>Get the App</h4>
                             <p>Download the Swift app onto your mobile phone from the app store.</p>
                         </div>
-                        <div class="setup-step">
+                    </div>
+                    <div class="setup-step flexbox-row">
+                        <div class="step-number">
+                            <h1><strong>3</strong></h1>
+                        </div>
+                        <div>
                             <h4>Locate</h4>
                             <p>Our app will find the nearest Swift bike or e-scooter for you automatically.</p>
                         </div>
-                        <div class="setup-step">
+                    </div>
+                    <div class="setup-step flexbox-row">
+                        <div class="step-number">
+                            <h1><strong>4</strong></h1>
+                        </div>
+                        <div>
                             <h4>Unlock & Go</h4>
                             <p>Get where you need to go fast and park responsibly. End your ride on the app and you're done!</p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="form-container">
+                    <h2>Sign Up</h2>
+                    <form>
+                        <div class="form-field">
+                            <label for="fname">Name</label>
+                            <input type="text" placeholder="Your Full Name" name="fname">
                         </div>
-                    </div>
-                    <div class="form-container">
-                        <h2>Sign Up</h2>
-                        <form>
-                            <div class="form-field">
-                                <label for="fname">Name</label>
-                                <input type="text" placeholder="Your Full Name" name="fname">
-                            </div>
-                            <div class="form-field">
-                                <label for="email">Email</label>
-                                <input type="email" placeholder="Your Email" name="email">
-                            </div>
-                            <div class="form-field">
-                                <label for="pass">Password</label>
-                                <input type="password" placeholder="Password" name="pass">
-                            </div>
-                            <div class="form-field">
-                                <input type="checkbox" name="terms-checkbox" class="terms-checkbox">
-                                <label for="agree-to-terms">I agree to all statements in <a href="#">Terms of Service</a></label>
-                            </div>
-                            <div class="form-field form-button">
-                                <input type="submit" value="Create Account">
-                            </div>
-                        </form>
-                    </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Your Email" name="email">
+                        </div>
+                        <div class="form-field">
+                            <label for="pass">Password</label>
+                            <input type="password" placeholder="Password" name="pass">
+                        </div>
+                        <div class="form-field">
+                            <input type="checkbox" name="terms-checkbox" class="terms-checkbox">
+                            <label for="agree-to-terms">I agree to all statements in <a href="#">Terms of Service</a></label>
+                        </div>
+                        <div class="form-field form-button">
+                            <input type="submit" value="Create Account">
+                        </div>
+                    </form>
                 </div>
             </section>
             <section id="service-area" class="flexbox-row">

@@ -13,17 +13,21 @@
     --dark-color: #1C1C1C;
     --low-bg: #f8f8f8;
     --high-bg: #fff;
+    /* Shadows */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --light-shadow: 0 5px 10px var(--shadow-color), 0 15px 40px var(--shadow-color);
 }
 
 html {
     font-family: "Montserrat";
     font-size: 16px;
+    color: var(--dark-color);
     width: 100%;
 }
 
 body {
     width: 100%;
-    /*margin-top: 4rem;*/
+    margin-top: 80px;
     background-color: var(--low-bg);
 }
 
@@ -32,21 +36,15 @@ header, main, footer {
 }
 
 header {
+    align-items: center;
     justify-content: space-between;
     background-color: var(--high-bg);
-    /*position: fixed;
-    padding: 1rem;
-    height: 4rem;
-    top: 0;*/
+    box-shadow: var(--light-shadow);
+    position: fixed;
+    padding: 0 1.5rem;
+    height: 80px;
+    top: 0;
 }
-
-main, footer {
-    /*padding: 0 1rem;*/
-}
-
-/*section {
-    margin-bottom: 2rem;
-}*/
 
 h1 {
     font-size: 3rem;
@@ -70,6 +68,11 @@ p {
     font-size: 1rem;
 }
 
+strong {
+    color: var(--primary-color);
+    font-weight: 800;
+}
+
 .flexbox-row {
     display: flex;
 }
@@ -91,7 +94,7 @@ p {
 
 .grid-item {
     background-color: var(--high-bg);
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     text-align: center;
     margin: 0 0 2.5rem;
     padding: 2.5rem 1.5rem;
@@ -103,17 +106,32 @@ nav.primary {
 }
 
 nav.primary > a, nav.primary .contact-button {
-    /*margin: 0 0.5rem;*/
+    margin: 0 0.25rem;
 }
 
 .contact-button {
     display: inline;
 }
 
+.hero-container {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    max-width: 1024px;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-container h3 {
+    margin: 1.5rem 0;
+    line-height: 2.5;
+}
+
 .cta-button {
     font-weight: 700;
     background-color: var(--accent-color);
-    border-radius: 0.5rem;
+    box-shadow: var(--light-shadow);
+    border-radius: 1rem;
     width: fit-content;
     padding: 1rem;
 }
@@ -128,7 +146,8 @@ nav.primary > a, nav.primary .contact-button {
 .review {
     align-items: center;
     background-color: var(--high-bg);
-    border-radius: 1.5rem;
+    box-shadow: var(--light-shadow);
+    border-radius: 2rem;
     padding: 1.5rem 1rem;
 }
 
@@ -150,19 +169,32 @@ nav.primary > a, nav.primary .contact-button {
 }
 
 .value-container {
-
+    box-shadow: var(--light-shadow);
 }
 
 .setup-step {
     background-color: var(--high-bg);
+    box-shadow: var(--light-shadow);
+    border-radius: 1rem;
+    align-items: center;
+    max-width: 768px;
+    margin-bottom: 1rem;
+    padding: 1rem 0.5rem;
+}
+
+.step-number {
+    text-align: right;
+    min-width: 2rem;
+    margin: 0 2rem;
 }
 
 .form-container {
     background-color: var(--high-bg);
+    margin-top: 5rem;
 }
 
 .price-plan {
-    
+    box-shadow: var(--light-shadow);
 }
 
 nav.secondary li {
@@ -174,28 +206,34 @@ nav.secondary li+li::before {
 }
 
 #swift-logo {
-    /*width: auto;
-    height: 2rem;*/
+    width: auto;
+    height: 40%;
 }
 
 #hero {
     background-color: var(--high-bg);
-    /*padding-top: 1rem;*/
+    box-shadow: var(--light-shadow);
+    height: 768px;
 }
 
 #customer-reviews {
     justify-content: center;
     gap: 0.5rem;
     margin: 4rem 0 4rem;
-    padding: 0 1.5rem;
+    padding: 5rem 1.5rem;
 }
 
 #value-prop {
     background-color: var(--secondary-color);
-    padding: 0 1.5rem;
+    box-shadow: var(--light-shadow);
+    padding: 5rem 1.5rem;
 }
 
 #value-prop h2 {
     color: var(--light-color);
     margin: 2rem 0 1.5rem ;
+}
+
+#setup {
+    padding: 5rem 1.5rem;
 }
