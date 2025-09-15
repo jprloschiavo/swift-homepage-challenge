@@ -46,6 +46,14 @@ header {
     top: 0;
 }
 
+footer {
+    padding: 3rem 1.5rem 2rem;
+}
+
+form {
+    width: 80%;
+}
+
 h1 {
     font-size: 3rem;
 }
@@ -103,14 +111,34 @@ strong {
 
 nav.primary {
     align-items: center;
+    gap: 1.5rem;
 }
 
-nav.primary > a, nav.primary .contact-button {
-    margin: 0 0.25rem;
+nav.primary .menu-item {
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+nav.primary .menu-item:hover {
+    color: var(--primary-color);
 }
 
 .contact-button {
-    display: inline;
+    color: var(--light-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.contact-button p {
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    padding: 0.75rem 0.5rem;
+    width: fit-content;
+    font-weight: 600;
+}
+
+.contact-button p:hover {
+    background-color: var(--primary-color);
 }
 
 .hero-container {
@@ -128,19 +156,21 @@ nav.primary > a, nav.primary .contact-button {
 }
 
 .cta-button {
-    font-weight: 700;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.cta-button h4 {
     background-color: var(--accent-color);
     box-shadow: var(--light-shadow);
     border-radius: 1rem;
-    width: fit-content;
     padding: 1rem;
+    width: fit-content;
 }
 
-.cta-button a {
-    font-size: 1.125rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: var(--dark-color);
+.cta-button h4:hover {
+    background-color: var(--primary-color);
 }
 
 .review {
@@ -177,7 +207,7 @@ nav.primary > a, nav.primary .contact-button {
     box-shadow: var(--light-shadow);
     border-radius: 1rem;
     align-items: center;
-    max-width: 768px;
+    max-width: 720px;
     margin-bottom: 1rem;
     padding: 1rem 0.5rem;
 }
@@ -188,13 +218,73 @@ nav.primary > a, nav.primary .contact-button {
     margin: 0 2rem;
 }
 
-.form-container {
+.sign-up-section {
     background-color: var(--high-bg);
+    box-shadow: var(--light-shadow);
+    border-radius: 1.5rem;
     margin-top: 5rem;
+    width: 896px;
+    height: 512px;
+    padding: 2rem;
+}
+
+.image-container {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.form-container {
+    width: 50%;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+}
+
+.form-container h2 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.form-field {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.form-field input:is([type="text"], [type="email"], [type="password"]) {
+    border: 0;
+    border-bottom: 2px solid var(--dark-color);
+    padding: 0.5rem 0.25rem;
+    width: 100%;
+}
+
+.form-field input:is([type="submit"]) {
+    border-radius: 0.5rem;
+    box-shadow: var(--light-shadow);
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.form-field input:is([type="submit"]):hover {
+    background-color: var(--primary-color);
 }
 
 .price-plan {
     box-shadow: var(--light-shadow);
+}
+
+nav.secondary {
+    margin-bottom: 0.5rem;
 }
 
 nav.secondary li {
@@ -236,4 +326,23 @@ nav.secondary li+li::before {
 
 #setup {
     padding: 5rem 1.5rem;
+}
+
+#plans-pricing {
+    background-color: var(--primary-color);
+    padding: 5rem 1.5rem;
+}
+
+#plans-pricing h2 {
+    color: var(--light-color);
+    margin: 2rem 0 1.5rem;
+}
+
+#cta-banner {
+    background-color: var(--high-bg);
+    box-shadow: var(--light-shadow);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 512px;
 }

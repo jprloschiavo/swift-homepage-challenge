@@ -11,11 +11,11 @@
         <header class="flexbox-row">
             <img id="swift-logo" src="./resources/images/swift-logo.svg">
             <nav class="primary flexbox-row">
-                <a href="#value-prop">Why Choose Us</a>
-                <a href="#plans-pricing">Plans & Pricing</a>
-                <div class="contact-button">
-                    <a href="#setup">Setup Swift</a>
-                </div>
+                <a href="#value-prop" class="menu-item"><p>Why Choose Us</p></a>
+                <a href="#plans-pricing" class="menu-item"><p>Plans & Pricing</p></a>
+                <a href="#setup" class="contact-button">
+                    <p>Setup Now</p>
+                </a>
             </nav>
         </header>
         <main>
@@ -23,9 +23,7 @@
                 <div class="hero-container flexbox-column">
                     <h1>Your Ride. <strong>Your Way.</strong></h1>
                     <h3>Find a Swift bike or e-scooter near you and start riding in seconds. Fast, affordable, and eco-friendly transportation at your fingertips.</h3>
-                    <div class="cta-button">
-                        <a href="#">Download the App</a>
-                    </div>
+                    <a href="#" class="cta-button"><h4>Download the App</h4></a>
                 </div>
             </section>
             <section id="customer-reviews" class="flexbox-row">
@@ -115,39 +113,31 @@
                         </div> 
                     </div>
                 </div>
-                <div class="form-container">
-                    <h2>Sign Up</h2>
-                    <form>
-                        <div class="form-field">
-                            <label for="fname">Name</label>
-                            <input type="text" placeholder="Your Full Name" name="fname">
-                        </div>
-                        <div class="form-field">
-                            <label for="email">Email</label>
-                            <input type="email" placeholder="Your Email" name="email">
-                        </div>
-                        <div class="form-field">
-                            <label for="pass">Password</label>
-                            <input type="password" placeholder="Password" name="pass">
-                        </div>
-                        <div class="form-field">
-                            <input type="checkbox" name="terms-checkbox" class="terms-checkbox">
-                            <label for="agree-to-terms">I agree to all statements in <a href="#">Terms of Service</a></label>
-                        </div>
-                        <div class="form-field form-button">
-                            <input type="submit" value="Create Account">
-                        </div>
-                    </form>
-                </div>
-            </section>
-            <section id="service-area" class="flexbox-row">
-                <map>
-                    <!-- Map placeholder -->
-                    <img src="">
-                </map>
-                <div>
-                    <h2>Explore Your City</h2>
-                    <p>Check out our service map to see where we're available. Whether it's your commute, errands, or a night out on the town, Swift is waiting for you.</p>
+                <div class="sign-up-section flexbox-row">
+                    <div class="image-container">
+                        <img src="./resources/images/man-on-phone-subway.jpg">
+                    </div>
+                    <div class="form-container flexbox-column">
+                        <h2>Sign Up</h2>
+                        <form>
+                            <div class="form-field">
+                                <input type="text" placeholder="Your Full Name" name="fname">
+                            </div>
+                            <div class="form-field">
+                                <input type="email" placeholder="Your Email" name="email">
+                            </div>
+                            <div class="form-field">
+                                <input type="password" placeholder="Password" name="pass">
+                            </div>
+                            <div class="form-field">
+                                <input type="checkbox" name="terms-checkbox" class="terms-checkbox">
+                                <label for="terms-checkbox">I agree to all statements in <a href="#">Terms of Service</a></label>
+                            </div>
+                            <div class="form-field form-button">
+                                <input type="submit" value="Create Account">
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </section>
             <section id="plans-pricing" class="flexbox-column">
@@ -167,12 +157,10 @@
                     </div>
                 </div>
             </section>
-            <section id="cta-banner">
+            <section id="cta-banner" class="flexbox-column">
                 <h2>Ready to Ride?</h2>
-                <h4>Download Swift and explore your city, your way.</h4>
-                <div class="cta-button">
-                    <a href="#">Download the App</a>
-                </div>
+                <h4>Download Swift and explore your city, <strong>your way.</strong></h4>
+                <a href="#" class="cta-button"><h4>Download the App</h4></a>
             </section>
         </main>
         <footer>
@@ -195,7 +183,6 @@
                     </li>
                 </ul>
             </nav>
-            <p>Follow us:</p>
             <p>&copy 2025 Swift. All rights reserved.</p>
         </footer>
     </body>
